@@ -1,0 +1,91 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #03cee9;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.container1 {
+    background-color: yellow;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(RED,BROWN);
+    padding: 20px 0;
+    color: rgb(226, 233, 235);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* Header1 Styles */
+
+.zeroo h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+    background-image: linear-gradient(yellow,dark rgb(255, 38, 0));
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(238, 16, 16);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 130px;
+    
+}
+/* Hero Section */
+.hero {
+    
+    color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #fc0f07;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #01853c;
+}

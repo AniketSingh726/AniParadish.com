@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with OTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(6, 218, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .otp-button {
+            margin-top: 10px;
+            background-color: #28a745;
+        }
+
+        .otp-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="otp">OTP</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+                <button type="button" class="btn otp-button" id="getOtpBtn">Get OTP</button>
+            </div>
+            <button type="button" class="btn" id="submitBtn">Submit</button>
+            <div id="error" class="error"></div>
+        </form>
+        <center><button><a href="index.html">HOME</a></button></center>
+
+    </div>
+    
+    <script>
+        document.getElementById('getOtpBtn').addEventListener('click', function () {
+            const username = document.getElementById('username').value;
+            const errorDiv = document.getElementById('error');
+
+            errorDiv.textContent = '';
+
+            if (!username) {
+                errorDiv.textContent = 'Please enter your username to get OTP.';
+                return;
+            }
+
+            // Simulate OTP generation logic
+            alert('OTP has been sent to your registered contact.');
+        });
+
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            const username = document.getElementById('username').value;
+            const otp = document.getElementById('otp').value;
+            const errorDiv = document.getElementById('error');
+
+            errorDiv.textContent = '';
+
+            if (!username || !otp) {
+                errorDiv.textContent = 'Please fill in all fields.';
+                return;
+            }
+
+            // Simulate OTP verification logic
+            if (otp === '123456') { // Replace with server-side validation in a real application
+                alert('Login successful!');
+            } else {
+                errorDiv.textContent = 'Invalid OTP. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>

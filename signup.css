@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #08ebf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Header1 Styles */
+.container2 {
+    background-image: linear-gradient(red,brown);
+}
+.zeroo h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: -130px;
+    padding: 40px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(253, 253, 250);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 390px;
+    margin-top: 90px;
+}
+
+.signup-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2874f0; /* Flipkart blue color */
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-container input:focus {
+    border-color: #2874f0; /* Flipkart blue color */
+    outline: none;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2874f0; /* Flipkart blue color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #1d5bbf; /* Darker shade of blue */
+}
+
+.already-have-account {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.already-have-account p {
+    font-size: 14px;
+}
+
+.already-have-account a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.already-have-account a:hover {
+    text-decoration: underline;
+}

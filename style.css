@@ -1,0 +1,207 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+.container1 {
+    background-color: #e68900;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(RED,BROWN);
+    padding: 20px 0;
+    color: rgb(226, 233, 235);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+header h2 {
+    text-align: center;
+    font-size:0.6em;
+    background-color: #333;
+}
+
+/* Header1 Styles */
+
+.zeroo h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+    background-image: linear-gradient(yellow,dark rgb(255, 38, 0));
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(238, 16, 16);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Hero Section */
+.hero {
+    background: url('img1.jpg') no-repeat center center/cover;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #fc0f07;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #03cee9;
+}
+/* zero section*/
+.zero {
+    background-color: #05d6f1;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.zero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.zero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.zero .btn {
+    padding: 10px 20px;
+    background-color: #fc0f07;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.zero .btn:hover {
+    background-color: #03cee9;
+}
+
+/* Products Section */
+.products {
+    background-color: #05d6f1;
+    padding: 90px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #00c1fc;
+    background-image: linear-gradient(red,brown);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 250px;
+    object-fit: cover;
+}
+.product-card :hover{
+    transform: translatey(-10px);
+    background-color: rgb(233, 230, 230);
+}
+
+.product-card h3 {
+    font-size: 1.6em;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.3em;
+    color: #ff9f00;
+    font-weight: bold;
+}
+
+.product-card .add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff9f00;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #e68900;
+}
+button{
+    border-radius: 10px;
+    color: #f71707;
+    background-color: #0fcce6;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    
+}

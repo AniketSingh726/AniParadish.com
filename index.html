@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ani Paradise.com</title>
+    <style>
+        /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+.container2 {
+    background-color: #faea05;
+}
+.container1 {
+    background-color: #111111;
+    color: rgb(252, 23, 7)
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(RED,BROWN);
+    padding: 20px 0;
+    color: rgb(226, 233, 235);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+header h2 {
+    text-align: center;
+    font-size:0.6em;
+    background-color: #333;
+}
+
+/* Header1 Styles */
+
+.zeroo h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(238, 16, 16);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 150px;
+}
+/* Hero Section */
+.hero {
+    background: url('img1.png') no-repeat center center/cover;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #fc0f07;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #027424;
+}
+/* zero section*/
+.zero {
+    background-color: #05d6f1;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.zero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.zero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.zero .btn {
+    padding: 10px 20px;
+    background-color: #fc0f07;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.zero .btn:hover {
+    background-color: #037011;
+}
+
+/* Products Section */
+.products {
+    background-color: #05d6f1;
+    padding: 90px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #00c1fc;
+    background-image: linear-gradient(red,brown);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 250px;
+    object-fit: cover;
+}
+.product-card :hover{
+    transform: translatey(-10px);
+    background-color: rgb(233, 230, 230);
+}
+
+.product-card h3 {
+    font-size: 1.6em;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.3em;
+    color: #e00d06;
+    font-weight: bold;
+}
+
+.product-card .add-to-cart {
+    padding: 10px 20px;
+    background-color: #ee0404;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #058316;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #881304;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+button:hover {
+    background-color: #03680c;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Ani Paradise.com</h1></div>
+        </header>
+    <ZEROO>
+        
+        <div class="container2">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Orders</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                    <input type="text" id="searchInput" placeholder="Search here...">
+                            <button onclick="performSearch()">Search</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="container1">
+            <marquee><h3>Veg and Non-Veg are available on this shop. If you want to buy then click on below product buttons.</h3></marquee></div>
+    </ZEROO>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Fresh and Juicy Chicken for Your Meals</h2>
+            <p>Explore our variety of premium veg & non-veg products, delivered right to your door.</p>
+            <a div="five" href="login.html" class="btn">Log in</a>
+            <a div="five" href="signup.html" class="btn">Sign up</a>
+        </div>
+    </section>
+
+    <!--Chicken Products Section -->
+    <section class="zero">
+        <div class="zero-content">
+    <a href="#products" class="btn">Chicken products</a>
+            <a href="#Briyani products" class="btn">Non-Veg Briyani</a>
+            <a href="#Egg products" class="btn">Egg products</a>
+            <a href="#veg products" class="btn">Veg-products</a>
+            <a href="#veg Briyani" class="btn">Veg-Briyani</a>
+            <a href="#Veg Rolls" class="btn">Veg-Rolls</a>
+            
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Chicken Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img3.png" alt="Whole Chicken">
+                    <h3>Whole Chicken</h3>
+                    <p>Freshly cut, organic whole chicken.</p>
+                    <p class="price">₹ 999.99</p>
+                    <a href="Wholechicken.html"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img4.png" alt="Chicken Breasts">
+                    <h3>Chicken Breasts</h3>
+                    <p>Boneless and skinless chicken breasts.</p>
+                    <p class="price">₹ 499.99</p>
+                    <a href="chickenbreast.html"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img5.jpg" alt="Chicken Wings">
+                    <h3>Chicken Wings</h3>
+                    <p>Delicious and crispy chicken wings.</p>
+                    <p class="price">₹ 299.99</p>
+                    <a href="chickenwings.html"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img6.jpg" alt="Chicken Thighs">
+                    <h3>Chicken Thighs</h3>
+                    <p>Juicy and tender chicken thighs.</p>
+                    <p class="price">₹ 699.99</p>
+                    <a href="#"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Briyani Products Section -->
+    <section id="Briyani products" class="products">
+        <div class="container">
+            <h2>Non-Veg Briyani</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img7.jpg" alt="Whole Chicken">
+                    <h3>Chicken Briyani</h3>
+                    <p>Freshly Egg, organic chicken Briyani.</p>
+                    <p class="price">₹ 699.99</p>
+                    <a href="#"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img8.jpg" alt="Chicken Breasts">
+                    <h3>Mutton Briyani</h3>
+                    <p>Soft And Fresh Mutton  Pices With Bones.</p>
+                    <p class="price">₹ 1,099.99</p>
+                    <a href="#"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img9.jpg" alt="Chicken Wings">
+                    <h3>Fish Briyani</h3>
+                    <p>Delicious and crispy Fish Pices.</p>
+                    <p class="price">₹ 499.99</p>
+                    <a href="#"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+                <div class="product-card">
+                    <img src="img10.jpg" alt="Chicken Thighs">
+                    <h3>Hydrabadi Briyani</h3>
+                    <p>Delicious saose With Onion Salad.</p>
+                    <p class="price">₹ 599.99</p>
+                    <a href="#"><button class="add-to-cart">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!--Egg Products Section -->
+ <section id="Egg products" class="products">
+    <div class="container">
+        <h2> Egg Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img11.jpg" alt="Whole Chicken">
+                <h3>Egg Rice</h3>
+                <p>Freshly Egg with Fried Rice.</p>
+                <p class="price">₹ 299.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img12.jpg" alt="Chicken Breasts">
+                <h3>Egg Omlete</h3>
+                <p>Testy and spicy.</p>
+                <p class="price">₹ 89.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img13.jpg" alt="Chicken Wings">
+                <h3>Egg Rolls</h3>
+                <p>Egg roll with souse.</p>
+                <p class="price">₹ 169.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img14.jpg" alt="Chicken Thighs">
+                <h3>Egg Sandwich</h3>
+                <p>Delicious Sandwich.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Veg Products Section -->
+<section id="veg products" class="products">
+    <div class="container">
+        <h2> Veg-Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img15.jfif" alt="Whole Chicken">
+                <h3>Pasta</h3>
+                <p>Testy and spicy pasta.</p>
+                <p class="price">₹ 59.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img16.jfif" alt="Chicken Breasts">
+                <h3>Cheese</h3>
+                <p>Cheese with Juicy Masala.</p>
+                <p class="price">₹ 119.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img17.jfif" alt="Chicken Wings">
+                <h3>Veg-Burger</h3>
+                <p>Egg roll with souse.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img18.jfif" alt="Chicken Thighs">
+                <h3>Masala Poha</h3>
+                <p>Delicious Sandwich.</p>
+                <p class="price">₹ 99.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Veg Briyani Section -->
+<section id="veg Briyani" class="products">
+    <div class="container">
+        <h2> Veg-Briyani</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img19.jfif" alt="Whole Chicken">
+                <h3>Soya Chunk Briyani</h3>
+                <p>Testy and spicy Briyani.</p>
+                <p class="price">₹ 129.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img20.jpg" alt="Chicken Breasts">
+                <h3>Handi Briyani</h3>
+                <p>Testy and Delicious flavour.</p>
+                <p class="price">₹ 149.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img17.jfif" alt="Chicken Wings">
+                <h3>Veg-Burger</h3>
+                <p>Egg roll with souse.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img18.jfif" alt="Chicken Thighs">
+                <h3>Masala Poha</h3>
+                <p>Delicious Sandwich.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Veg Rolls Section -->
+<section id="Veg Rolls" class="products">
+    <div class="container">
+        <h2> Veg-Rolls</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img21.jfif" alt="Whole Chicken">
+                <h3>Veg Spring Rolls</h3>
+                <p>crispy rolls with sauce.</p>
+                <p class="price">₹ 105.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img22.jpg" alt="Chicken Breasts">
+                <h3>Rice Paper Veg Rolls</h3>
+                <p>Testy and Delicious Rolls.</p>
+                <p class="price">₹ 149.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img23.jpg" alt="Chicken Wings">
+                <h3>Veg Cheese Rolls</h3>
+                <p>Best Quality cheese inside.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+            <div class="product-card">
+                <img src="img24.jpg" alt="Chicken Thighs">
+                <h3>Masala Dosa With cheese butter
+                </h3>
+                <p>Delicious Dosa.</p>
+                <p class="price">₹ 69.99</p>
+                <a href="#"><button class="add-to-cart">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025  Ani Paradise. All rights reserved.</p>
+            <button><a href="index.html">HOME</a></button>
+        </div>
+    </footer>
+    <body>
+        <div class="slideshow-container">
+          <div class="slides" style="background-image: url('img1.png')"></div>
+          <div class="slides" style="background-image: url('img11.jpg')"></div>
+          <div class="slides" style="background-image: url('img12.jpg')"></div>
+        </div>
+      
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      
+    
+
+</body>
+<script src="index.js"></script>
+</html>
